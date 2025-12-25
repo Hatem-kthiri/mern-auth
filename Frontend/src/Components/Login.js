@@ -17,7 +17,7 @@ function Login() {
       password,
     };
     axios
-      .post("http://localhost:3001/api/user/login", loginDetails)
+      .post("https://mern-auth-xx7q.onrender.com/api/user/login", loginDetails)
       .then((res) => {
         SaveToLocalStorage(res.data.data);
         navigate("/");

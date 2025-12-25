@@ -17,7 +17,7 @@ function Register() {
       password,
     };
     axios
-      .post("http://localhost:3001/api/user/register", userData)
+      .post("https://mern-auth-xx7q.onrender.com/api/user/register", userData)
       .then((res) => navigate("/login"))
       .catch((err) => console.log(err));
   };
